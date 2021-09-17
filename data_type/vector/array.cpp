@@ -11,15 +11,18 @@ void printVectorElements(std::vector<T> &vec)
     std::cout << std::endl;
 }
 
-
 int main() {
-    std::cout << "hello world";
-
-    std::vector <std::pair<double,double>> waypoints = {{12,10}, {12,34}}; 
+    std::vector <std::pair<double,double>> waypoints = {{12,10}, {11,34}}; 
     
     std::cout << "waypoint: ";
     printVectorElements(waypoints);
-
+    int i = 0;
+    for(int i=0; i < waypoints.size(); ++i){
+        double x = waypoints[i].first;  
+        double y = waypoints[i].second;
+ }  
     return 0;
 
 }
+
+
